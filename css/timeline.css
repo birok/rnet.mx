@@ -292,7 +292,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
-	font-family: "Raleway", 'trebuchet';
+	font-family: 'trebuchet';
 	color: #777777;
   }
 
@@ -735,7 +735,15 @@ body {
   /*---------------------------------------
      BUTTONS               
   -----------------------------------------*/
-
+  .pricing-bottom {
+    padding: 20px 0;
+  }
+  .pricing-bottom {
+    position: relative;
+  }
+  .pricing-bottom span {
+    font-size: 20px;
+  }
   .section-btn {
     /*background: #29ca8e;*/
     background: #9fcc5e;
@@ -754,8 +762,132 @@ body {
     color: #ffffff;
   }
 
+  @media(min-width:768px) {
+    .top-nav-collapse .nav .section-btn a {
+      color: #ffffff;
+    }
+  }
+
+  pricing-btn {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: inline-block;
+  }
+
 
 
   /*---------------------------------------
        PRE LOADER              
   -----------------------------------------*/
+
+
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+
+  .spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+  }
+
+  @-webkit-@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+
+  
+/*ESTILO DE PROYECTOS*/
+.tm-section {
+    max-width: 100%;
+    width: auto;
+    background: transparent;    
+    align-content: center;
+    padding: 0 0;
+}
+
+.col-md-6.tm-contact-col { margin-bottom: 0; }
+
+.tm-img-slider { max-width: 940px; }
+#tm-section-1 { max-width: 700px; }
+
+.tm-icon-media {
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+
+.style-img-icon{
+    font-size: 7rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.tm-bg-transparent-black {
+  background-color: rgb(255, 255, 255);    
+  padding: 30px;
+}
+.tm-border-white { 
+  border: 10px double green; 
+  padding: 20px;
+}
+#log {
+  flex-shrink: 0;
+  padding-left: 3em;
+}
+
+#summaries {
+  flex-grow: 1;
+  
+}
+
+summary {
+  font-family: 'trebuchet';
+  padding: 10px;
+	font-size: 20px;
+  font-weight: 300;
+  font-weight: bold;
+  color: green;
+}
+
