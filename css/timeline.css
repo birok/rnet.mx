@@ -71,7 +71,7 @@ body {
 
   section {
     position: relative;
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
 
@@ -834,7 +834,7 @@ body {
     width: auto;
     background: transparent;    
     align-content: center;
-    padding: 0 0;
+    padding:100px;
 }
 
 .col-md-6.tm-contact-col { margin-bottom: 0; }
@@ -864,10 +864,7 @@ body {
     width: 100px;
     height: 100px;
 }
-.tm-bg-transparent-black {
-  background-color: rgb(255, 255, 255);    
-  padding: 30px;
-}
+
 .tm-border-white { 
   border: 10px double green; 
   padding: 20px;
@@ -890,4 +887,16 @@ summary {
   font-weight: bold;
   color: green;
 }
+
+.img-proyectos{
+  height: 100%; 
+  width: 100%;
+  position: relative;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.10);
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 
