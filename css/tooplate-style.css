@@ -1229,6 +1229,7 @@ body.politics_version .section-title h3 {
   position: relative;
 }
 
+
 .testimonials::before {
   content: "";
   position: absolute;
